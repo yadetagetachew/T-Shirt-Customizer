@@ -2,8 +2,31 @@
     box-sizing: border-box;
     margin: 0;
 }
+ .nav-item a:hover {
+    background-color: #ef6712;
 
+}
+/* Hero Image */
+.jumbotron{
+    background-image: url(/img/WAD\ HERO.jpg) ;
+    background-size: cover;
+    height: 80vh;
+}
+h1, .dispay-1{
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 2px 2px #e37b3b;
+}
+
+/* chris */
+img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+/* Moon */
 .cart
     {
         background-color: #c7f0c9;
     }
+
