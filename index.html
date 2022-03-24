@@ -1,43 +1,158 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-  <!-- Required meta tags -->
+  <head>
+    <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
   <!-- css -->
-  <script src="https://kit.fontawesome.com/4ef87b411f.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="/css/style.css">
-
+<script src="https://kit.fontawesome.com/4ef87b411f.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="/css/style.css">
 
   <!-- JavaScript -->
-  <script src="/js/main.js"></script>
+<script src="/js/main.js"></script>
+    
+   <!-- google fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@519&display=swap" rel="stylesheet">
 
   <title>T-Shirt-Customizer</title>
 </head>
-
-<body>
-  <!-- navbar -->
-  <nav>
-
-  </nav>
-  <!-- main-container -->
-  <div class="container-fluid">
-    <!-- T-Shirt-col -->
-    <div class="col-md">
-
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-light navbar-expand-lg bg-light text-black">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="/img/T-shirt.png" alt="" width="50" height="44" class="d-inline-block align-self-center ms-3">
+         <p class="d-inline-block flex-grow-1 pe-3  text-black"></p> 
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header text-black">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+            <button type="button" class="btn-close  text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page">SCREEN PRINT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active">EMBROIDERY</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page">CALALOG</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="" aria-expanded="false">
+                  CONTACT
+                </a> 
+          </div>
+        </div>
+      </div>
+    </nav>
+     <!-- jumbotron starts -->
+    <div class="row jumbotron">
+      <div class="d-flex justify-content-center align-items-center flex-column text-center">
+        <h1 class="text-light display-1">W.A.D GRAPHICS</h1>
+      </div>    
+      </div>
     </div>
-    <!-- Customize-col -->
-    <div class="col-md">
+    <!-- main-container -->
+    <div class="container-fluid mx-auto">
+      <div class="row">
+        <!-- T-Shirt-col -->
+        <div class="col-md">
 
-    </div>
-    <!-- Subtotal-col -->
-    <div class="col-md">
+          <img src="img/WHITETSHIRTUPDATE23_Hamilton-and-HareTubular-T-Shirt-White_01.webp" width="75%">
+          <p  style="text-align: center; margin-top: 300px; margin-left: 528px; width: 350px; font-size: 50px;">Keep calm and <br> code on</p>
+
+        </div>
+        
+        <!-- Customize-col -->
+        <div class="col-md">
+
+          <!-- customize text -->
+          <div class="row">
+            <h2>Customize T-shirt</h2>
+            <form>
+              <div class="form-group">
+                <label for="text">Text to put on T-shirt:</label>
+                <input type="text" class="form-control" id="inputText">
+                <small id="alert">max 20 characters</small>
+              </div>
+            </form>
+          </div>
+          <!-- customize font -->
+          <div class="row">
+            
+          </div>
+          <!-- buttons -->
+          <div class="row">
+            <div class="col">
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </div>
+            <div class="col">
+              <button type="button" class="btn btn-danger btn-sm">Remove from Cart</button>
+            </div>
+          </div>
+
+        </div>
+        
+        <!-- Shopping Cart -->
+        <div class="col-md border border-dark me-2 cart">
+          
+          <!-- Shopping Cart Contents -->
+          <div class="row">
+            <h2>Shopping Cart</h2>
+            <h5>Custom Shirt</h5> <!-- Will be hidden using JavaScript before items are added to the cart -->
+            <p>Cart is empty</p>
+          </div>
+          <hr>
+
+          <!-- Shopping Cart Cost -->
+            <!-- Subtotal -->
+              <div class="row">
+                <span class="col">
+                  <h6>Subtotal:</h6>
+                </span>
+                <span class="col text-end">
+                  <h6 id="subtotal">$0.00</h6>
+                </span>
+              </div>
+
+            <!-- Tax -->
+            <div class="row">
+              <span class="col">
+                <h6>Tax:</h6>
+              </span>
+              <span class="col text-end">
+                <h6 id="tax">$0.00</h6>
+              </span>
+            </div>
+
+            <!-- Total -->
+            <div class="row">
+              <span class="col">
+                <h5 class="fw-bold">Total:</h5>
+              </span>
+              <span class="col text-end">
+                <h5 id="total">$0.00</h5>
+              </span>
+            </div>
+            </div>
+          </div>
+        <!-- End Shopping Cart -->
 
     </div>
   </div>
@@ -103,16 +218,9 @@
     </div>
   </footer>
 
-  <!-- Optional JavaScript; choose one of the two! -->
+<!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-  <!-- Option 1: Bootstrap Bundle with Popper -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
-
-  <!-- Option 2: Separate Popper and Bootstrap JS -->
-  <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
 </body>
 
 </html>
