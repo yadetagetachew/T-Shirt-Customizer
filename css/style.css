@@ -17,16 +17,24 @@ h1, .dispay-1{
     text-shadow: 2px 2px #e37b3b;
 }
 
+.custom-section
+    {
+        min-height: 60vh;
+    }
+
 /* chris */
-img {
-    position: absolute;
-    left: 0px;
-    top: 0px;
+.shirt-previewcol
+    {
+        background-image: url(/img/WHITETSHIRTUPDATE23_Hamilton-and-HareTubular-T-Shirt-White_01.webp);
+        background-size: cover;
+        background-position: center;
+    }
+/* .shirt-preview {
     z-index: -1;
-}
+} */
 /* Moon */
 .cart
     {
-        background-color: #c7f0c9;
+        background-color: #fcad62;
     }
 
