@@ -1,9 +1,7 @@
 *{
     margin: 0;
 }
-.navbar-light{
-    background-color:transparent ; 
-}
+
  .nav-item a:hover {
     background-color: #ef6712;
 
@@ -18,3 +16,12 @@ h1, .dispay-1{
     font-family: 'Raleway', sans-serif;
     text-shadow: 2px 2px #e37b3b;
 }
+
+/* chris */
+img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+
