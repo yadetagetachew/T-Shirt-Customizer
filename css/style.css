@@ -1,3 +1,20 @@
 *{
     margin: 0;
 }
+.navbar-light{
+    background-color:transparent ; 
+}
+ .nav-item a:hover {
+    background-color: #ef6712;
+
+}
+/* Hero Image */
+.jumbotron{
+    background-image: url(/img/WAD\ HERO.jpg) ;
+    background-size: cover;
+    height: 80vh;
+}
+h1, .dispay-1{
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 2px 2px #e37b3b;
+}
