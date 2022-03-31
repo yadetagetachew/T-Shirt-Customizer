@@ -1,7 +1,8 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
+
+<head>
+  <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -14,145 +15,158 @@
   <link rel="stylesheet" href="/css/style.css">
 
   <!-- JavaScript -->
-  <script src="/js/main.js"></script>
-    
-   <!-- google fonts -->
+  <script src="/js/main.js" defer></script>
+
+  <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@519&display=swap" rel="stylesheet">
 
   <title>T-Shirt-Customizer</title>
 </head>
-  <body>
-    <!-- navbar -->
-    <nav class="navbar navbar-light navbar-expand-lg bg-light text-black">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="/img/T-shirt.png" alt="" width="50" height="44" class="d-inline-block align-self-center ms-3">
-         <p class="d-inline-block flex-grow-1 pe-3  text-black"></p> 
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-          <span class="navbar-toggler-icon "></span>
-        </button>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header text-black">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
-            <button type="button" class="btn-close  text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page">SCREEN PRINT</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active">EMBROIDERY</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page">CATALOG</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="" aria-expanded="false">
-                  CONTACT
-                </a> 
-          </div>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-light navbar-expand-lg bg-light text-black">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="/img/T-shirt.png" alt="" width="50" height="44" class="d-inline-block align-self-center ms-3">
+        <p class="d-inline-block flex-grow-1 pe-3  text-black"></p>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header text-black">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+          <button type="button" class="btn-close  text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page">SCREEN PRINT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active">EMBROIDERY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page">CATALOG</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="" aria-expanded="false">
+                CONTACT
+              </a>
         </div>
       </div>
-    </nav>
-     <!-- jumbotron starts -->
-    <div class="row jumbotron">
-      <div class="d-flex justify-content-center align-items-center flex-column text-center">
-        <h1 class="text-light display-1">W.A.D GRAPHICS</h1>
-      </div>    
-      </div>
     </div>
-    <!-- main-container -->
-    <div class="container-fluid mx-auto">
-      <div class="row custom-section">
-        
-        <!-- T-Shirt-col -->
+  </nav>
+  <!-- jumbotron starts -->
+  <div class="row jumbotron">
+    <div class="d-flex justify-content-center align-items-center flex-column text-center">
+      <h1 class="text-light display-1">W.A.D GRAPHICS</h1>
+    </div>
+  </div>
+  </div>
+  <!-- main-container -->
+  <div class="container-fluid mx-auto">
+    <div class="row custom-section">
+
+      <!-- T-Shirt-col -->
         <div class="col border d-flex align-items-center justify-content-center shirt-previewcol">
           <img src= "/img/t-shirt-mockup-png-and-PSD-Free-Download.png" class="shirt-preview">
           <p id="teeText" max-width = "100px">Keep calm and <br> code on</p>
         </div>
-        
-        <!-- Customize-col -->
-        <div class="col">
 
-          <!-- customize text -->
-          <div class="row">
-            <h2>Customize T-shirt</h2>
-            <form>
-              <div class="form-group">
-                <label for="text">Text to put on T-shirt:</label>
-                <input type="text" class="form-control" id="inputText">
-                <small id="alert">max 20 characters</small>
-              </div>
-            </form>
-          </div>
-          <!-- customize font -->
-          <div class="row">
-            
-          </div>
-          <!-- buttons -->
-          <div class="row">
-            <div class="col">
-              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
-            </div>
-            <div class="col">
-              <button type="button" class="btn btn-danger btn-sm">Remove from Cart</button>
-            </div>
-          </div>
+      <!-- Customize-col -->
+      <div class="col">
 
+        <!-- customize text -->
+        <div class="customText">
+          <h2>Customize T-shirt</h2>
+          <form>
+            <div class="form-group">
+              <label for="text">Text to put on T-shirt:</label>
+              <input type="text" class="form-control" id="inputText">
+              <small id="alert">max 20 characters</small>
+            </div>
+          </form>
         </div>
-        
-        <!-- Shopping Cart -->
-        <div class="col me-2 cart">
-          
-          <!-- Shopping Cart Contents -->
-          <div class="row">
-            <h2>Shopping Cart</h2>
-            <h5>Custom Shirt</h5> <!-- Will be hidden using JavaScript before items are added to the cart -->
-            <p>Cart is empty</p>
+
+        <!-- Customize Font -->
+        <div class="ChooseFont">
+          <label for="font">Choose Font:</label>
+          <select name="font" id="font">
+        </div>
+        <div class="fontSize">
+            <label for="customRange3" class="form-label">Choose font size:</label>
+            <input type="range" class="form-range" min="12" max="36" step="2" id="sliderRange">
+        </div>
+        <!-- button -->
+        <div class="col color-change mb-2">
+            <label for="text">Choose color:</label><br>
+            <button type="button" class="btn btn-dark btn-lg me-1"></button>
+            <button type="button" class="btn btn-primary btn-lg me-1"></button>
+            <button type="button" class="btn btn-success btn-lg me-1"></button>
+            <button type="button" class="btn btn-danger btn-lg me-1"></button>
+        </div>
+          <div class="col mb-2">
+            <button type="button" class="btn btn-primary btn-md me-3">Add to Cart</button>
+            <button type="button" class="btn btn-danger btn-md">Remove from Cart</button>
           </div>
-          <hr>
+        </div>
+      
+      
 
-          <!-- Shopping Cart Cost -->
-            <!-- Subtotal -->
-              <div class="row">
-                <span class="col">
-                  <h6>Subtotal:</h6>
-                </span>
-                <span class="col text-end">
-                  <h6 id="subtotal">$0.00</h6>
-                </span>
-              </div>
 
-            <!-- Tax -->
-            <div class="row">
-              <span class="col">
-                <h6>Tax:</h6>
-              </span>
-              <span class="col text-end">
-                <h6 id="tax">$0.00</h6>
-              </span>
-            </div>
 
-            <!-- Total -->
-            <div class="row">
-              <span class="col">
-                <h5 class="fw-bold">Total:</h5>
-              </span>
-              <span class="col text-end">
-                <h5 id="total">$0.00</h5>
-              </span>
-            </div>
-            </div>
-          </div>
-        <!-- End Shopping Cart -->
+      <!-- Shopping Cart -->
+      <div class="col me-2 cart">
 
+        <!-- Shopping Cart Contents -->
+        <div class="row">
+          <h2>Shopping Cart</h2>
+          <h5>Custom Shirt</h5> <!-- Will be hidden using JavaScript before items are added to the cart -->
+          <p>Cart is empty</p>
+        </div>
+        <hr>
+
+        <!-- Shopping Cart Cost -->
+        <!-- Subtotal -->
+        <div class="row">
+          <span class="col">
+            <h6>Subtotal:</h6>
+          </span>
+          <span class="col text-end">
+            <h6 id="subtotal">$0.00</h6>
+          </span>
+        </div>
+
+        <!-- Tax -->
+        <div class="row">
+          <span class="col">
+            <h6>Tax:</h6>
+          </span>
+          <span class="col text-end">
+            <h6 id="tax">$0.00</h6>
+          </span>
+        </div>
+
+        <!-- Total -->
+        <div class="row">
+          <span class="col">
+            <h5 class="fw-bold">Total:</h5>
+          </span>
+          <span class="col text-end">
+            <h5 id="total">$0.00</h5>
+          </span>
+        </div>
+      </div>
     </div>
+    <!-- End Shopping Cart -->
   </div>
-  
+  </div>
+
   <!-- footer -->
   <footer ID="contact" class="bg-orange text-center text-white mx-auto" style="background-color: #a4abb6">
     <div class="container">
@@ -212,10 +226,13 @@
       ©️ 2022:
 
     </div>
+
   </footer>
 
-<!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 
 </body>
 
