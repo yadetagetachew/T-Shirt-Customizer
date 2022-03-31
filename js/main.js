@@ -29,6 +29,26 @@ function fontSize(){
     document.getElementById("teeText").style.fontSize = fontLength + "px";
 }
 
+
+// color changer
+// change font to black
+document.getElementById('black').addEventListener('click', function(){
+    document.getElementById('teeText').style.color='black';
+})
+// change font to blue
+document.getElementById('blue').addEventListener('click', function(){
+    document.getElementById('teeText').style.color='blue';
+})
+// change font to green
+document.getElementById('green').addEventListener('click', function(){
+    document.getElementById('teeText').style.color='green';
+})
+// change font to red
+document.getElementById('red').addEventListener('click', function(){
+    document.getElementById('teeText').style.color='red';
+})
+
+
 //Add to Cart
 document.getElementById("addButton").onclick = function () {addCart()};
 
@@ -48,3 +68,4 @@ function addCart(){
         document.getElementById("textRequired").innerHTML = "";
     }
 }
+
