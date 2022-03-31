@@ -35,6 +35,12 @@ h1, .dispay-1{
 /* Moon */
 .cart
     {
-        background-color: #fcad62;
+        background-color: #ee8d4c;
     }
+/* button size */
+.color-change .btn{
+    height: 25px;
+    width: 60px;
+    border-radius: 25%;
+}
 
