@@ -28,3 +28,22 @@ function fontSize(){
     let fontLength = document.getElementById("sliderRange").value;
     document.getElementById("teeText").style.fontSize = fontLength + "px";
 }
+
+// color changer
+// change font to black
+document.getElementById('black').addEventListener('click', function(){
+    document.getElementById('teeText').style.color='black';
+})
+// change font to blue
+document.getElementById('blue').addEventListener('click', function(){
+    document.getElementById('teeText').style.color='blue';
+})
+// change font to green
+document.getElementById('green').addEventListener('click', function(){
+    document.getElementById('teeText').style.color='green';
+})
+// change font to red
+document.getElementById('red').addEventListener('click', function(){
+    document.getElementById('teeText').style.color='red';
+})
+
