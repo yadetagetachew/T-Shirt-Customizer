@@ -23,18 +23,26 @@ h1, .dispay-1{
     }
 
 /* chris */
-.shirt-previewcol
+/* .shirt-previewcol
     {
         background-image: url(/img/WHITETSHIRTUPDATE23_Hamilton-and-HareTubular-T-Shirt-White_01.webp);
         background-size: cover;
         background-position: center;
-    }
-/* .shirt-preview {
+    } */
+.shirt-preview {
+    position: absolute;
     z-index: -1;
-} */
+    width: 32%;
+
+}
+
+.text-preview {
+    position: absolute;;
+    z-index: 7;
+}
 /* Moon */
 .cart
     {
-        background-color: #fcad62;
+        background-color: #7bc0eb;
     }
 
