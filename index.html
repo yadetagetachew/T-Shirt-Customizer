@@ -94,9 +94,16 @@
         </div>
 
         <!-- Customize Font -->
-        <div class="ChooseFont">
+        <div class="  ChooseFont">
           <label for="font">Choose Font:</label>
-          <select name="font" id="font">
+          <select id="font" class="input" onchange="ChooseFont(this);">
+            <option value selected="selected">Arial</option>
+            <option value="Monospace">MonoSpace</option>
+            <option value="Oswald">Oswald</option>
+            <option value="Raleway">Raleway</option>
+            <option value="Ubuntu">Ubuntu</option>
+          </select>
+
         </div>
         <div class="fontSize">
             <label for="customRange3" class="form-label">Choose font size:</label>

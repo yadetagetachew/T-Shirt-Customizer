@@ -21,6 +21,12 @@ document.getElementById("inputText").onkeyup = function () {tooManyCharacters()}
 //Chose Font
 
 
+   var ChooseFont = function (font) {
+        document.getElementById("teeText").style.fontFamily= font.value;
+    }
+
+
+
 //Chose Font Size
 document.getElementById("sliderRange").oninput = function () {fontSize()};
 
