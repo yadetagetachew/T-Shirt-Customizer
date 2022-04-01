@@ -2,6 +2,9 @@
     box-sizing: border-box;
     margin: 0;
 }
+label, p, a{
+    font-size: 20px;
+}
  .nav-item a:hover {
     background-color: #ef6712;
 
@@ -24,7 +27,7 @@ h1, .dispay-1{
 
 
 .shirt-size {
-    min-height: 250px;
+    min-height: 350px;
     }
 .shirt-preview {
     position: absolute;
