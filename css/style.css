@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
 }
-label, p{
+label, p, a{
     font-size: 21px;
 }
  .nav-item a:hover {
