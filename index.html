@@ -86,32 +86,35 @@
           <h2>Customize T-shirt</h2>
           <form>
             <div class="form-group">
-              <label for="text">Text to put on T-shirt:</label>
-              <input type="text" class="form-control" id="inputText">
-              <small id="alert">max 20 characters</small>
+              <label for="text"><strong>Text to put on T-shirt:</strong></label>
+              <input type="text" class="form-control mt-2" id="inputText">
+              <p><small id="alert">max 20 characters</small></p>
             </div>
           </form>
         </div>
 
         <!-- Customize Font -->
-        <div class="  ChooseFont">
-          <label for="font">Choose Font:</label>
-          <select id="font" class="input" onchange="ChooseFont(this);">
-            <option value selected="selected">Arial</option>
-            <option value="Monospace">MonoSpace</option>
-            <option value="Oswald">Oswald</option>
-            <option value="Raleway">Raleway</option>
-            <option value="Ubuntu">Ubuntu</option>
-          </select>
-
+        <div class="ChooseFont">
+          <div>
+            <label for="font"><strong>Choose Font:</strong></label>
+          </div>
+          <div>
+            <select id="font" class="input mt-2 mb-4 font-selector" onchange="ChooseFont(this);">
+              <option value selected="selected">Arial</option>
+              <option value="Monospace">MonoSpace</option>
+              <option value="Oswald">Oswald</option>
+              <option value="Raleway">Raleway</option>
+              <option value="Ubuntu">Ubuntu</option>
+            </select>
+          </div>
         </div>
         <div class="fontSize">
-            <label for="customRange3" class="form-label">Choose font size:</label>
-            <input type="range" class="form-range" min="12" max="36" step="2" id="sliderRange">
+            <label for="customRange3" class="form-label"><strong>Choose Font Size:</strong></label>
+            <input type="range" class="form-range mb-4" min="12" max="36" step="2" id="sliderRange">
         </div>
         <!-- button -->
-        <div class="col color-change mb-2">
-            <label for="text">Choose color:</label><br>
+        <div class="col color-change mb-4">
+            <p><label for="text"><strong>Choose color:</strong></label></p>
             <button type="button" id ="black" class="btn btn-dark btn-lg me-1"></button>
             <button type="button" id ="blue" class="btn btn-primary btn-lg me-1"></button>
             <button type="button" id ="green" class="btn btn-success btn-lg me-1"></button>
