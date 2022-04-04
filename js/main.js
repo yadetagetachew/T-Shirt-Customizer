@@ -28,7 +28,7 @@ document.getElementById("sliderRange").oninput = function () {fontSize()};
 
 function fontSize(){
     let fontLength = document.getElementById("sliderRange").value;
-    document.getElementById("teeText").style.fontSize = fontLength + "px";
+    document.getElementById("teeText").style.fontSize = fontLength + "vw";
 }
 
 
